@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="Msf-xV-xxT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Msf-xV-xxT" id="iOz-yz-eCU">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLE-lb-8Ke">
+                        <rect key="frame" x="68" y="16" width="221" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="1qL-fE-aH1"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="DGl-hA-goG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                        <color key="textColor" name="TextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoa-xH-Qjh">
+                        <rect key="frame" x="68" y="43" width="221" height="40.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="sUK-nt-PUo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="hOI-lQ-uGg">
+                        <rect key="frame" x="297" y="16" width="50" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fE-aW-tJF">
+                                <rect key="frame" x="9.5" y="0.0" width="40.5" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gr-Tq-K4W">
+                                <rect key="frame" x="21.5" y="22" width="28.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctb-U4-UKM">
+                                <rect key="frame" x="21.5" y="35.5" width="28.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="SNR-xY-pLg"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIY-5u-46G">
+                        <rect key="frame" x="351" y="16" width="8" height="8"/>
+                        <color key="backgroundColor" name="GreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="lbM-kW-Ogj"/>
+                            <constraint firstAttribute="height" constant="8" id="xfS-kY-pLZ"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yyg-n5-EVO">
+                        <rect key="frame" x="16" y="16" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="ruE-IR-UBL"/>
+                            <constraint firstAttribute="width" constant="44" id="xqj-ve-224"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                <integer key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Eoa-xH-Qjh" firstAttribute="leading" secondItem="yyg-n5-EVO" secondAttribute="trailing" constant="8" id="0Ns-9g-0sh"/>
+                    <constraint firstItem="yyg-n5-EVO" firstAttribute="leading" secondItem="iOz-yz-eCU" secondAttribute="leading" constant="16" id="JXr-3N-NXP"/>
+                    <constraint firstAttribute="bottom" secondItem="Eoa-xH-Qjh" secondAttribute="bottom" constant="16" id="Ngm-E8-blR"/>
+                    <constraint firstItem="hOI-lQ-uGg" firstAttribute="top" secondItem="yyg-n5-EVO" secondAttribute="top" id="R6w-Gr-aE1"/>
+                    <constraint firstItem="GLE-lb-8Ke" firstAttribute="top" secondItem="yyg-n5-EVO" secondAttribute="top" id="W2k-zd-zyh"/>
+                    <constraint firstItem="TIY-5u-46G" firstAttribute="leading" secondItem="hOI-lQ-uGg" secondAttribute="trailing" constant="4" id="abX-dd-V6H"/>
+                    <constraint firstItem="GLE-lb-8Ke" firstAttribute="leading" secondItem="yyg-n5-EVO" secondAttribute="trailing" constant="8" id="akT-Ac-Dwg"/>
+                    <constraint firstItem="hOI-lQ-uGg" firstAttribute="leading" secondItem="Eoa-xH-Qjh" secondAttribute="trailing" constant="8" id="gpK-Zz-rsZ"/>
+                    <constraint firstItem="Eoa-xH-Qjh" firstAttribute="top" secondItem="GLE-lb-8Ke" secondAttribute="bottom" constant="5" id="i6t-ej-DIU"/>
+                    <constraint firstAttribute="trailing" secondItem="TIY-5u-46G" secondAttribute="trailing" constant="16" id="nGS-0a-yXA"/>
+                    <constraint firstItem="yyg-n5-EVO" firstAttribute="top" secondItem="iOz-yz-eCU" secondAttribute="top" constant="16" id="nwq-FK-xtP"/>
+                    <constraint firstItem="TIY-5u-46G" firstAttribute="top" secondItem="yyg-n5-EVO" secondAttribute="top" id="pc6-xk-677"/>
+                    <constraint firstItem="hOI-lQ-uGg" firstAttribute="leading" secondItem="GLE-lb-8Ke" secondAttribute="trailing" constant="8" id="qCK-zo-oIg"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.14117647058823529" green="0.16862745098039217" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

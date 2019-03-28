@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vYw-9p-Mdn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmptyState" translatesAutoresizingMaskIntoConstraints="NO" id="GDr-Bg-N8Q">
+                    <rect key="frame" x="35.5" y="112" width="304" height="243"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="bKy-VK-atA"/>
+                        <constraint firstAttribute="height" constant="243" id="ves-Q9-Iuz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To start press the add button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNU-9h-TXW">
+                    <rect key="frame" x="20" y="470.5" width="335" height="19"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                    <color key="textColor" name="GreyColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don`t eny transactions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXg-Br-ALg">
+                    <rect key="frame" x="20" y="371" width="335" height="79.5"/>
+                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
+                    <color key="textColor" name="GreenColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8Tu-Iv-Qpa" firstAttribute="trailing" secondItem="dNU-9h-TXW" secondAttribute="trailing" constant="20" id="86x-aS-hvf"/>
+                <constraint firstItem="dNU-9h-TXW" firstAttribute="top" secondItem="uXg-Br-ALg" secondAttribute="bottom" constant="20" id="EYg-lb-Y2F"/>
+                <constraint firstItem="GDr-Bg-N8Q" firstAttribute="centerY" secondItem="vYw-9p-Mdn" secondAttribute="centerY" constant="-100" id="GvW-N2-KwG"/>
+                <constraint firstItem="GDr-Bg-N8Q" firstAttribute="centerX" secondItem="vYw-9p-Mdn" secondAttribute="centerX" id="Njn-oT-je5"/>
+                <constraint firstItem="8Tu-Iv-Qpa" firstAttribute="trailing" secondItem="uXg-Br-ALg" secondAttribute="trailing" constant="20" id="S5z-KL-Qgv"/>
+                <constraint firstItem="uXg-Br-ALg" firstAttribute="top" secondItem="GDr-Bg-N8Q" secondAttribute="bottom" constant="16" id="SWf-gD-0Kt"/>
+                <constraint firstItem="dNU-9h-TXW" firstAttribute="leading" secondItem="8Tu-Iv-Qpa" secondAttribute="leading" constant="20" id="hcS-31-PdQ"/>
+                <constraint firstItem="uXg-Br-ALg" firstAttribute="leading" secondItem="8Tu-Iv-Qpa" secondAttribute="leading" constant="20" id="pFl-QC-RpL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8Tu-Iv-Qpa"/>
+            <point key="canvasLocation" x="-82" y="-304"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EmptyState" width="308" height="245"/>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreyColor">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

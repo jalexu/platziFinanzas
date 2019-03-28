@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tDz-VM-kQW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transactions-->
+        <scene sceneID="HHR-Sr-d16">
+            <objects>
+                <viewController id="lY5-PF-7pQ" customClass="TransactionsViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mn2-hX-vio">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qZl-wk-0w9">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xib-KF-JY9" firstAttribute="trailing" secondItem="qZl-wk-0w9" secondAttribute="trailing" id="P00-6i-4rD"/>
+                            <constraint firstItem="qZl-wk-0w9" firstAttribute="leading" secondItem="xib-KF-JY9" secondAttribute="leading" id="UNM-Ij-pso"/>
+                            <constraint firstItem="xib-KF-JY9" firstAttribute="bottom" secondItem="qZl-wk-0w9" secondAttribute="bottom" id="Xkj-Nf-ujJ"/>
+                            <constraint firstItem="qZl-wk-0w9" firstAttribute="bottom" secondItem="xib-KF-JY9" secondAttribute="bottom" id="b6r-Zi-Xud"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qZl-wk-0w9" secondAttribute="bottom" id="jsq-ED-pHJ"/>
+                            <constraint firstItem="qZl-wk-0w9" firstAttribute="top" secondItem="xib-KF-JY9" secondAttribute="top" id="kxE-eI-3TD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xib-KF-JY9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabBarTransactions" id="rpu-VH-Muk"/>
+                    <navigationItem key="navigationItem" title="Transactions" id="54j-AD-Erc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="qZl-wk-0w9" id="nZ2-Yk-LFc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h71-Fg-T00" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="-418.74062968515744"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="BfN-wh-TXd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tDz-VM-kQW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="EuZ-p4-zmF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="0Jy-AV-Wsz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="GreenColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lY5-PF-7pQ" kind="relationship" relationship="rootViewController" id="9eS-wO-Gl8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Edb-02-Nm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="-417"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBarTransactions" width="20" height="20"/>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
