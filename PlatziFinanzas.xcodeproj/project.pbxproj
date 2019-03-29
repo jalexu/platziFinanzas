@@ -18,6 +18,7 @@
 		C24ECD18224A786900CC77E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24ECD17224A786900CC77E9 /* Assets.xcassets */; };
 		C24ECD1B224A786900CC77E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24ECD19224A786900CC77E9 /* LaunchScreen.storyboard */; };
 		C24ECD34224A7E1400CC77E9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24ECD33224A7E1400CC77E9 /* MapKit.framework */; };
+		C263F2A9224EA1BC002563BD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C263F2A8224EA1BC002563BD /* Cartfile */; };
 		C27E72E6224D278C00A401EB /* Stactics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27E72E5224D278C00A401EB /* Stactics.storyboard */; };
 		C27E72F0224D32AD00A401EB /* PlatziFinanzasCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C27E72EE224D32AD00A401EB /* PlatziFinanzasCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C27E72F3224D32AD00A401EB /* PlatziFinanzasCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27E72EC224D32AD00A401EB /* PlatziFinanzasCore.framework */; };
@@ -81,6 +82,7 @@
 		C24ECD1C224A786900CC77E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C24ECD2F224A7D6D00CC77E9 /* Production.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Production.plist; path = /Users/jaimeuribe/Documents/swift/PlatziFinanzas/Production.plist; sourceTree = "<absolute>"; };
 		C24ECD33224A7E1400CC77E9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C263F2A8224EA1BC002563BD /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		C27E72E5224D278C00A401EB /* Stactics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stactics.storyboard; sourceTree = "<group>"; };
 		C27E72EC224D32AD00A401EB /* PlatziFinanzasCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatziFinanzasCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27E72EE224D32AD00A401EB /* PlatziFinanzasCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatziFinanzasCore.h; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		C24ECD04224A785A00CC77E9 = {
 			isa = PBXGroup;
 			children = (
+				C263F2A8224EA1BC002563BD /* Cartfile */,
 				C24ECD0F224A785A00CC77E9 /* PlatziFinanzas */,
 				C27E72ED224D32AD00A401EB /* PlatziFinanzasCore */,
 				C24ECD0E224A785A00CC77E9 /* Products */,
@@ -426,6 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C263F2A9224EA1BC002563BD /* Cartfile in Resources */,
 				C2CFE2EE224BA879009274B1 /* OnBoarding.storyboard in Resources */,
 				C24ECD1B224A786900CC77E9 /* LaunchScreen.storyboard in Resources */,
 				C27E72E6224D278C00A401EB /* Stactics.storyboard in Resources */,
