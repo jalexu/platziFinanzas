@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5z1-Uj-m71">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5z1-Uj-m71">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Singn In View Controller-->
         <scene sceneID="Me6-lL-Ppj">
             <objects>
-                <viewController id="5z1-Uj-m71" sceneMemberID="viewController">
+                <viewController id="5z1-Uj-m71" customClass="SingnInViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dmt-hb-UgN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +128,7 @@
                                         <rect key="frame" x="20" y="70" width="374" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGM-Nr-E8W">
                                         <rect key="frame" x="20" y="181" width="374" height="45"/>
@@ -156,6 +156,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="singIn:" destination="5z1-Uj-m71" eventType="touchUpInside" id="Bm3-v6-xxY"/>
                                             <segue destination="aU1-zB-ThF" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="2Nc-e0-KaV"/>
                                         </connections>
                                     </button>
@@ -210,6 +211,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KXC-Vb-DlC"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="S8r-5Z-OpP" id="fqv-AU-Lq3"/>
+                        <outlet property="passwordTextField" destination="XbR-PB-4PM" id="CuD-qT-dkQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CI-2v-hf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

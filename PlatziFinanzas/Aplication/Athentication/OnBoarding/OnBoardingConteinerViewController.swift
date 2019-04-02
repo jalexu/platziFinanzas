@@ -22,6 +22,16 @@ class OnBoardingConteinerViewController: UIViewController {
     
     //permite conectar
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        //no mostrar obBording cuando este iniciadia sesion
+        if segue.identifier == "goToSign"{
+            UserDefaults.standard.set(true, forKey: "WathchedOnBoarding")
+            //guarda la bandera en el gestor
+            UserDefaults.standard.synchronize()
+            return
+        }
+        
         guard segue.identifier == "openOnBording",
             let destination = segue.destination as? OnBoardingViewController else {
                 return
