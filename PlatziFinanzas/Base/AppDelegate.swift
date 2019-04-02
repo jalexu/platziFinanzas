@@ -26,12 +26,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if onboarding{
             name = "SingIN"
         }
-        
-        
+
         let viewController = UIStoryboard(name: name, bundle: Bundle.main).instantiateInitialViewController()
         
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
+        
+        
+        //guardar sesión para que no se inicie cada que se habra
+        /*let session = Auth.auth().currentUset != nil
+        if session {
+            name = "Main"
+        }*/
         
         return true
     }
